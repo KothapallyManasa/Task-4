@@ -1,0 +1,26 @@
+root@ip-172-31-44-194:~/bash-scripts# cat 18_Print_HTTP_errorcode.sh
+
+#!/bin/bash
+
+URL="https://www.guvi.in/"
+
+RESPONSE=$(curl --silent --output /dev/null --write-out "%{http_code}" ${URL})
+
+echo "The status code is $RESPONSE"
+
+if [ $RESPONSE -eq 200 ]
+
+then
+
+echo "script succeeded"
+
+else
+
+echo "script failed with return code $RESPONSE"
+
+fi
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts# ./18_Print_HTTP_errorcode.sh
+The status code is 200
+script succeeded
+root@ip-172-31-44-194:~/bash-scripts#
