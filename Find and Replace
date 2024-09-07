@@ -1,0 +1,54 @@
+root@ip-172-31-44-194:~/bash-scripts# touch 19_find_and_replace.txt
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts# nano 19_find_and_replace.txt
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts# $ sed 's/give/learning/g' 19_find_and_replace.txt > 20_find_and_replace.txt
+$: command not found
+root@ip-172-31-44-194:~/bash-scripts#  sed 's/give/learning/g' 19_find_and_replace.txt > 20_find_and_replace.txt
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts# nano 20_find_and_replace.txt
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts# cat 19_find_and_replace.txt
+It is better to give than to receive.
+Please give to our charity.
+They're asking people to give money for a new hospital.
+When the seeds start to grow, give the seedlings full sun.
+
+We welcome you to the show.
+People observe the holiday do so to welcome the start of of spring.
+That will be a welcome change.
+He was a welcome sight.
+root@ip-172-31-44-194:~/bash-scripts# cat 20_find_and_replace.txt
+It is better to learning than to receive.
+Please learning to our charity.
+They're asking people to learning money for a new hospital.
+When the seeds start to grow, learning the seedlings full sun.
+
+We welcome you to the show.
+People observe the holiday do so to welcome the start of of spring.
+That will be a welcome change.
+He was a welcome sight.
+root@ip-172-31-44-194:~/bash-scripts# sed 's/welcome/learning/g' 19_find_and_replace.txt > 20_find_and_replace.txt
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts#
+root@ip-172-31-44-194:~/bash-scripts# cat 20_find_and_replace.txt
+It is better to give than to receive.
+Please give to our charity.
+They're asking people to give money for a new hospital.
+When the seeds start to grow, give the seedlings full sun.
+
+We learning you to the show.
+People observe the holiday do so to learning the start of of spring.
+That will be a learning change.
+He was a learning sight.
+root@ip-172-31-44-194:~/bash-scripts#
